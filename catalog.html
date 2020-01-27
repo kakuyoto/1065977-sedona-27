@@ -5,110 +5,131 @@
     <title>Sedona</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-header-logo">
+    <div class=""> <!-- Так, обёрточка) -->
+      <header class="main-header">
+        <div class="main-header-logo"> <!-- Тож самое, как я и писал в главной странице -->
           <img src="img\logo.svg" width="140" height="71" alt="Логотип Седона">
         </div>
-        <ul class="site-navigation">
-          <li><a href="">Информация</a> </li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
-          <li>Гостиницы</li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      <section class="search">
-        <h2 class="visually hidden">Форма для подбора жилья</h2>
-        <!-- Здесь будет форма для подобра жилья -->
-      </section>
-      <section class="catalog">
-        <h2 class="visually hidden">Список отелей</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3><a href="catalog-item.html">Amara Resort & Spa</a></h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html"><img src="" alt="Amara Resort & Spa" width="135" height="90"></a>
-            </p>
-            <div class="hotel-button">
-              <div class="type">Гостиница</div>
-              <a href="#" class="button-blue">Подробнее</a>
-            </div>
-            <div class="hotel-button">
-              <div class="price">от 4000 р.</div>
-              <a href="#" class="button-brown">Забронировать</a>
-            </div>
-            <div class="rating">
-              <div class="rating-stars">
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-              </div>
-              <p class="hotel-rating">Рейтинг: 8,5</p>
-            </div>
-          </li>
-            <li class="catalog-item">
-              <h3><a href="catalog-item.html">Desert Quail Inn</a></h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html"><img src="" alt="Desert Quail Inn" width="135" height="90"></a>
-              </p>
-              <div class="hotel-button">
-                <div class="type">Мотель</div>
-                <a href="#" class="button-blue">Подробнее</a>
-              </div>
-              <div class="hotel-button">
-                <div class="price">от 3000 р.</div>
-                <a href="#" class="button-brown">Забронировать</a>
-              </div>
-              <div class="rating">
-                <div class="rating-stars">
-                  <span class="icon-star"></span>
-                  <span class="icon-star"></span>
-                  <span class="icon-star"></span>
-                </div>
-                <p class="hotel-rating">Рейтинг: 8,9</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <h3><a href="catalog-item.html">Villas at Poco Diablo</a></h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html"><img src="" alt="Villas at Poco Diablo" width="135" height="90"></a>
-              </p>
-              <div class="hotel-button">
-                <div class="type">Апартаменты</div>
-                <a href="#" class="button-blue">Подробнее</a>
-              </div>
-              <div class="hotel-button">
-                <div class="price">от 2000 р.</div>
-                <a href="#" class="button-brown">Забронировать</a>
-              </div>
-              <div class="rating">
-                <div class="rating-stars">
-                  <span class="icon-star"></span>
-                  <span class="icon-star"></span>
-                </div>
-                <p class="hotel-rating">Рейтинг: 9,2</p>
-              </div>
-            </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="main-footer">
-        <p class="footer-contacts">#visitSEDONA<br>Тел: +7(495) 666-02-66</p>
-        <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Ютуб</a></li>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="">Информация</a> </li>
+            <li><a href="">Фото и видео</a></li>
+            <li><a href="">Карта штата</a></li>
+            <li>Гостиницы</li> <!-- Неплохо, но класс назначить забыл, ссылка же активна, перейти нельзя => тогда какой у неё класс?) -->
           </ul>
-        </div>
-          <p class="footer-copyright">
-            Website by <a class="main-header-logo" href="https://htmlacademy.ru/">
-              <img src="" width="115" height="41" alt="Логотип HTMLacademy">
-            </a>
-          </p>
-    </footer>
+        </nav>
+      </header>
+      <main class="container">
+        <section class="search">
+          <h2 class="visually hidden">Форма для подбора жилья</h2> <!-- Не-не-не, не лепи. Тут нет заголовка никакого, не стóит, не нужно. -->
+          <!-- Здесь будет форма для подобра жилья -->
+        </section>
+        <section class="catalog">
+          <h2 class="visually hidden">Список отелей</h2> <!-- Тож самое, друг, не надо это тут) -->
+          <ul class="catalog-list">
+            <li class="catalog-item"> <!-- Смотри: тут у тебя 2 колонки, в которых подблоки. Выходит так, что мы делаем 2 колонки и затем в них, логически, помещаем элементы -->
+              <div class=""> <!-- Задашь им классы сам. Это левая колонка. -->
+                <p class="catalog-item-image"> <!-- Вот так делать не надо. Ссылка не обязана быть в параграфе, чтоб быть ссылкой, так что удаляй параграф и доставай с него ссылку сюда, на этот уровень -->
+                  <a href="catalog-item.html"><img src="" alt="Amara Resort & Spa" width="135" height="90"></a> <!-- Это, кстати, левая колонка в левой колонке (подуровень) -->
+                </p>
+                
+                <div class=""> <!-- А это правая колонка в левой колонке (подуровень) -->
+                  <h3><a href="catalog-item.html">Amara Resort & Spa</a></h3>
+
+                  <!-- А вот и неверно, здесь также логическая структура:
+                  У тебя сначала идёт строка с типом жилья и ценой, а потом строка с кнопками. Переделай это сам.
+                  То есть в итоге в этой колонке у тебя должно быть 1 элемент и 2 блока на этом уровне:
+                  1. Заголовок (строка, элемент),
+                  2. Тип жилья + цена (строка, блок),
+                  3. Кнопки (строка, блок)
+                  -->
+                  <div class="hotel-button"> 
+                    <div class="type">Гостиница</div>
+                    <a href="#" class="button-blue">
+                      <button>Подробнее</button> <!-- Кнопка должна быть в ссылке, чтоб по нажатию ссылка реагировала -->
+                    </a>
+                  </div>
+
+                  <div class="hotel-button">
+                    <div class="price">от 4000 р.</div>
+                    <a href="#" class="button-brown">Забронировать</a>
+                  </div>
+                </div> <!-- Конец левой колонки -->
+
+              <div class=""> <!-- Это правая колонка. -->
+                <div class="rating">
+                  <div class="rating-stars">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
+                  <p class="hotel-rating">Рейтинг: 8,5</p>
+                </div>
+              </div> <!-- Конец правой колонки -->
+            </li>
+              <!-- Остальные элементы списка переделаешь, глядя на 1ый -->
+              <li class="catalog-item">
+                <h3><a href="catalog-item.html">Desert Quail Inn</a></h3>
+                <p class="catalog-item-image">
+                  <a href="catalog-item.html"><img src="" alt="Desert Quail Inn" width="135" height="90"></a>
+                </p>
+                <div class="hotel-button">
+                  <div class="type">Мотель</div>
+                  <a href="#" class="button-blue">Подробнее</a>
+                </div>
+                <div class="hotel-button">
+                  <div class="price">от 3000 р.</div>
+                  <a href="#" class="button-brown">Забронировать</a>
+                </div>
+                <div class="rating">
+                  <div class="rating-stars">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
+                  <p class="hotel-rating">Рейтинг: 8,9</p>
+                </div>
+              </li>
+              <li class="catalog-item">
+                <h3><a href="catalog-item.html">Villas at Poco Diablo</a></h3>
+                <p class="catalog-item-image">
+                  <a href="catalog-item.html"><img src="" alt="Villas at Poco Diablo" width="135" height="90"></a>
+                </p>
+                <div class="hotel-button">
+                  <div class="type">Апартаменты</div>
+                  <a href="#" class="button-blue">Подробнее</a>
+                </div>
+                <div class="hotel-button">
+                  <div class="price">от 2000 р.</div>
+                  <a href="#" class="button-brown">Забронировать</a>
+                </div>
+                <div class="rating">
+                  <div class="rating-stars">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
+                  <p class="hotel-rating">Рейтинг: 9,2</p>
+                </div>
+              </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="main-footer">
+          <p class="footer-contacts">#visitSEDONA</p> <!-- Тож самое замечание, как и на главной странице -->
+          <div class="footer-social">
+            <ul>
+              <li><a class="social-button" href="#">Твиттер</a></li> <!-- Тож самое замечание, как и на главной странице -->
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Ютуб</a></li>
+            </ul>
+          </div>
+            <p class="footer-copyright">
+              Website by <a class="main-header-logo" href="https://htmlacademy.ru/">
+                <img src="" width="115" height="41" alt="Логотип HTMLacademy">
+              </a>
+            </p>
+      </footer>
+    </div>
   </body>
 </html>
