@@ -87,36 +87,39 @@
             <h2 class="search-question">Заинтересовались?</h2>
             <p class="search-date">Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в седоне</p>
-              <a class="search-button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+              <button class="search-button" type="submit">ПОИСК ГОСТИНИЦЫ В седоне</button>
           </section>
-        </main>
-        <!-- <div>Здесь будет карта</div> -->
-        <section class="search-date">
-          <form class="search-form" action="#" method="post">
-            <label class="arrival" for="date-arrival">
-              Дата заезда:
+          <section class="search-map">
+            <form class="search-form" action="#" method="post">
+            <div class="date-in">
+             <label class="arrival" for="date-arrival">Дата заезда:</label>
+             <button type="button"><span class="icon-calendar"></span></button>
+             <input type="text" name="date-arrival" placeholder="24 апреля 2017" id="date-arrival">
+            </div>
+            <div class="date-out">
+            <label class="departure" for="date-departure">Дата выезда:</label>
               <button type="button"><span class="icon-calendar"></span></button>
-            </label>
-            <input type="text" name="date-arrival" placeholder="24 апреля 2017" id="date-arrival">
-            <label class="departure" for="date-departure">
-              Дата выезда:
-              <button type="button"><span class="icon-calendar"></span></button>
-            </label>
               <input type="text" name="date-departure" placeholder="4 июля 2017" id="date-departure">
+            </div>
               <div class="quantity">
+                <div class="quantity-adult">
                 <label for="quantity-adults">Взрослые:</label>
                 <button  type="button" name="minus-adult"><span class="icon-minus"></span></button>
                 <input type="text" name="quantity-adults" value="2" id="quantity-adults">
                 <button  type="button" name="plus-adult"><span class="icon-plus"></span></button>
+                </div>
+                <div class="quantity-children"></div>
                 <label for="quantity-children">Дети:</label>
                 <button  type="button" name="minus-children"><span class="icon-minus"></span></button>
-                <input type="text" name="quantity-adults" value="0" id="quantity-children">
+                <input type="text" name="quantity-children" value="0" id="quantity-children">
                 <button  type="button" name="plus-children"><span class="icon-plus"></span></button>
+                </div>
               </div>
               <button type="submit" class="search-button">Найти</button>
+              <!-- <div>Здесь будет карта</div> -->
             </form>
-        </section>
-        <!-- Не уверен насчет иконок календаря и плюса/минуса. -->
+          </section>
+        </main>
         <footer class="main-footer">
           <h3 class="footer-hashtag">#visitSEDONA</h3>
           <h3 class="footer-number">Тел: +7(495) 666-02-66</h3>
