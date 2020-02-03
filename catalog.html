@@ -19,13 +19,57 @@
           </ul>
         </nav>
       </header>
-
       <main class="container">
-        <section class="filter">
-          <!-- Здесь будет форма для подобра жилья -->
-        </section>
+        <form class="header-filter" method="post" action="https://echo.htmlacademy.ru">
+          <div class="filter-components">
+            <fieldset>
+              <legend class="components-title">Инфраструктура:</legend>
+                <input type="checkbox" name="pool" id="checkbox1" checked>
+                <label for="checkbox1">Бассейн</label>
+                <input type="checkbox" name="parking" id="checkbox2">
+                <label for="checkbox2">Парковка</label>
+                <input type="checkbox" name="wi-fi" id="checkbox3">
+                <label for="checkbox3">wi-fi</label>
+            </fieldset>
+          </div>
+          <div class="filter-houses">
+            <fieldset>
+              <legend class="houses-title">Тип жилья:</legend>
+                <input type="checkbox" name="hotel" id="checkbox4" checked>
+                <label for="checkbox4">Гостиница</label>
+                <input type="checkbox" name="motel" id="checkbox5" checked>
+                <label for="checkbox5">Мотель</label>
+                <input type="checkbox" name="apartments" id="checkbox6" checked>
+                <label for="checkbox6">Апартаменты</label>
+            </fieldset>
+          </div>
+          <div class="filter-price">
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <div class="price-controls">
+                <label class="min-price">
+                   от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до
+                  <input type="text" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+	        			<div class="scale">
+				          <div class="bar"></div>
+	        			</div>
+	        			<div class="range-toggle range-toggle-min"></div>
+	        			<div class="range-toggle range-toggle-max"></div>
+              </div>
+              <a class="buttton-show" href="#">Показать</a>
+            </fieldset>
+          </div>
+
+        </form>
         <div class="search-results">
-          <h3>Найдено: 3</h3>
+          <h3>Найдено: <span>3</span></h3>
           <div class="search-center">
             <small>Сортировка:</small>
             <ul>
@@ -35,7 +79,12 @@
             </ul>
           </div>
           <div class="search-right">
-            <!-- стрелочки как ссылки оформить? -->
+            <button class="page-up" title="Сортировка от меньшего к большему">
+              <svg class="arrow-up"  width="11" height="10" ></svg>
+            </button>
+            <button class="page_down" title="Сортировка от большего к меньшему">
+              <svg class="arrow_down"  width="11" height="10"></svg>
+            </button>
           </div>
         </div>
         <section class="catalog">
@@ -50,8 +99,8 @@
                     <div class="price">от 4000 р.</div>
                   </div>
                   <div class="hotel-buttons">
-                     <a href="#" class="button-blue"><button>Подробнее</button></a>
-                    <a href="#" class="button-brown"><button>Забронировать</button></a>
+                    <a href="#" class="button-blue">Подробнее</a>
+                    <button class="button-brown">Забронировать</button>
                   </div>
                 </div>
               </div>
@@ -66,65 +115,67 @@
                   <!-- В чате советуют через img, потому что они не активные. -->
                   <p class="hotel-rating">Рейтинг: 8,5</p>
                 </div>
-               </div>
+              </div>
             </li>
-              <li class="catalog-item">
-                <div class="left-column">
-                  <a href="catalog-item.html"><img src="img/catalog/hotel-picture2.jpg" alt="Desert Quail Inn" width="135" height="90"></a>
-                  <div class="description">
-                    <h3><a href="catalog-item.html">Desert Quail Inn</a></h3>
-                    <div class="type-price">
-                      <div class="type">Мотель</div>
-                      <div class="price">от 3000 р.</div>
-                    </div>
-                    <div class="hotel-button">
-                       <a href="#" class="button-blue"><button>Подробнее</button></a>
-                      <a href="#" class="button-brown"><button>Забронировать</button></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="right-column">
-                  <div class="rating">
-                    <div class="rating-stars">
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                    </div>
-                    <p class="hotel-rating">Рейтинг: 8,9</p>
-                  </div>
-                </div>
-              </li>
-              <li class="catalog-item">
+            <li class="catalog-item">
+              <div class="left-column">
+                <a href="catalog-item.html"><img src="img/catalog/hotel-picture2.jpg" alt="Desert Quail Inn" width="135" height="90"></a>
                 <div class="description">
-                  <a href="catalog-item.html"><img src="img/catalog/hotel-picture3.jpg" alt="Villas at Poco Diablo" width="135" height="90"></a>
-                  <div class="left-column-right">
-                    <h3><a href="catalog-item.html">Villas at Poco Diablo</a></h3>
-                    <div class="type-price">
-                      <div class="type">Апартаменты</div>
-                      <div class="price">от 2000 р.</div>
-                    </div>
-                    <div class="hotel-button">
-                       <a href="#" class="button-blue"><button>Подробнее</button></a>
-                      <a href="#" class="button-brown"><button>Забронировать</button></a>
-                    </div>
+                  <h3><a href="catalog-item.html">Desert Quail Inn</a></h3>
+                  <div class="type-price">
+                    <div class="type">Мотель</div>
+                    <div class="price">от 3000 р.</div>
+                  </div>
+                  <div class="hotel-button">
+                    <a href="#" class="button-blue">Подробнее</a>
+                    <button class="button-brown">Забронировать</button>
                   </div>
                 </div>
-                <div class="right-column">
-                  <div class="rating">
-                    <div class="rating-stars">
-                      <span class="icon-star"></span>
-                      <span class="icon-star"></span>
-                    </div>
-                    <p class="hotel-rating">Рейтинг: 8,9</p>
+              </div>
+              <div class="right-column">
+                <div class="rating">
+                  <div class="rating-stars">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
+                  <p class="hotel-rating">Рейтинг: 8,9</p>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <div class="description">
+                <a href="catalog-item.html"><img src="img/catalog/hotel-picture3.jpg" alt="Villas at Poco Diablo" width="135" height="90"></a>
+                <div class="left-column-right">
+                  <h3><a href="catalog-item.html">Villas at Poco Diablo</a></h3>
+                  <div class="type-price">
+                    <div class="type">Апартаменты</div>
+                    <div class="price">от 2000 р.</div>
+                  </div>
+                  <div class="hotel-button">
+                    <a href="#" class="button-blue">Подробнее</a>
+                    <button class="button-brown">Забронировать</button>
                   </div>
                 </div>
-              </li>
+              </div>
+              <div class="right-column">
+                <div class="rating">
+                  <div class="rating-stars">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
+                  <p class="hotel-rating">Рейтинг: 8,9</p>
+                </div>
+              </div>
+            </li>
           </ul>
         </section>
       </main>
       <footer class="main-footer">
-        <h3 class="footer-hashtag">#visitSEDONA</h3>
-        <h3 class="footer-phone">Тел: +7(495) 666-02-66</h3>
+        <div class="contacts">
+          <div class="footer-hashtag">#visitSEDONA</div>
+          <div class="footer-number">Тел: +7(495) 666-02-66</div>
+        </div>
         <div class="footer-social">
           <ul>
             <li><a  class="social-button" href="#"><img src="img/global/tw-icon.svg" alt="Твиттер" width="17" height="15"></a></li>
@@ -132,12 +183,13 @@
             <li><a  class="social-button" href="#"><img src="img/global/youtube-icon.svg" alt="Ютуб" width="20" height="26"></a></li>
           </ul>
         </div>
-          <p class="footer-copyright">
-            Website by <a class="main-header-logo" href="https://htmlacademy.ru/">
-              <img src="img/global/logo-htmla.svg" width="115" height="41" alt="Логотип HTMLacademy">
-            </a>
-          </p>
+        <p class="footer-copyright">
+          Website by <a class="main-header-logo" href="https://htmlacademy.ru/">
+          <img src="img/global/logo-htmla.svg" width="115" height="41" alt="Логотип HTMLacademy">
+          </a>
+        </p>
       </footer>
     </div>
   </body>
 </html>
+
