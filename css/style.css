@@ -16,7 +16,7 @@ a {
 
 .main-navigation {
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .site-navigation {
@@ -32,9 +32,6 @@ a {
 } */
 
 .promo {
-  padding-left: 380px;
-  padding-right: 380px;
-  text-align: center;
   line-height: 26px;
 }
 
@@ -47,15 +44,37 @@ a {
   color: #333333;
 }
 
-/* второе задание
-.advantages{
-
+/* .advantages {
 
 } */
 
-.search-hotel{
-  text-align: center;
+.advantages h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
 }
+
+.advantages h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.advantage-blue p {
+  color: #ffffff;
+}
+
+.advantages-line {
+  list-style: none;
+}
+
+.advantages-line p {
+  color: #333333;
+}
+
+
+/* .search-hotel{
+  text-align: center;
+} */
 
 .search-question {
   font-size: 30px;
@@ -119,8 +138,6 @@ a {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .footer-copyright {
@@ -132,6 +149,81 @@ a {
 }
 
 /* catalog.html */
+
+.header-filter {
+  color: #ffffff;
+}
+.header-filter fieldset{
+  border: 0 none;
+}
+
+.header-filter legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header-filter input {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.filter-price input {
+    width: 157px;
+    height: 32px;
+    border: solid 2px #ffffff;
+    color: #ffffff;
+}
+
+.buttton-show {
+  width: 133px;
+  height: 32px;
+  border: solid 2px #ffffff;
+  line-height: 21px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+
+.search-results h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.search-center small {
+  font-size: 12px;
+  line-height: 18px;
+}
+.search-center li {
+  list-style: none;
+}
+
+.search-center a{
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  line-height: 18px;
+  list-style: none;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+/* .active {
+
+} */
+
+.page-up {
+  width: 11px;
+  height: 10px;
+  object-fit: contain;
+  background-color: #cacaca;
+}
+
+.page-down {
+  width: 11px;
+  height: 10px;
+  object-fit: contain;
+  background-color: #81b3d2;
+}
 
 .catalog-list {
   list-style: none;
@@ -160,4 +252,8 @@ a {
   width: 110px;
   height: 27px;
   background-color: #f2f2f2;
+}
+
+.catalog a {
+  color: #000000;
 }
