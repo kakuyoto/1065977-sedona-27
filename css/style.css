@@ -16,6 +16,7 @@
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+
 }
 
 h1, h2, h3 {
@@ -164,17 +165,22 @@ a {
 
 .promo {
   height: 216px;
-  padding-top: 61px;
-  padding-bottom: 50px;
+  margin-top: 61px;
+  margin-bottom: 38px;
   line-height: 26px;
   text-align: center;
+}
+
+.promo-title {
+  padding-right: 380px;
+  padding-left: 380px;
 }
 
 .promo-reasons {
   color: #333333;
   margin-top: 38px;
+  margin-bottom: 0;
 }
-
 /* ======================================================================================= */
 
  /* advantages  */
@@ -210,7 +216,7 @@ a {
   height: 256px;
   padding: 0;
   margin: 0;
-  padding-top: 56px;
+  margin-top: 56px;
   list-style: none;
   line-height: 21px;
   text-align: center;
@@ -222,11 +228,25 @@ a {
 
 .advantage-bottom .advantages-line {
   background-color: #eeeeee;
+  height: 256px;
+  margin-top: 0px;
+
 }
 
+.more-advantage:nth-of-type(1) {
+  margin:  50px 97px 63px 95px;
+}
+
+
 .more-advantage:nth-of-type(2) {
-  margin-left: 17px;
-  margin-right: 17px;
+  width: 400px;
+  margin: 50px 69px 64px 69px;
+
+}
+
+.more-advantage:nth-of-type(3) {
+  width: 400px;
+  margin: 50px 77px 64px 77px;
 }
 /* ============================================================================== */
 
@@ -234,10 +254,12 @@ a {
 
 .search-hotel {
   text-align: center;
+  margin-left: 17px;
 }
 
 
 .search-question {
+  margin-top: 57px;
   font-size: 30px;
   line-height: 36px;
 }
@@ -256,7 +278,9 @@ a {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 52px;
 }
+
 .find-hotel:hover {
   background-color: #604e43;
 }
@@ -274,6 +298,7 @@ a {
   height: 395px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   color: #000000;
+  margin-left: 308px;
 }
 
 .search-form input {
@@ -337,6 +362,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin-top: 54px;
 }
 
 /* ================================================================================ */
@@ -347,13 +373,14 @@ a {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 120px;
+  min-height: 120px;
   opacity: 0.9;
 }
 
 .contacts {
   margin-top: 36px;
   margin-bottom: 32px;
+  margin-left: 132px;
   line-height: 26px;
   font-size: 21px;
   font-weight: 700;
@@ -362,10 +389,9 @@ a {
 
 .footer-social {
   display: flex;
-  justify-content: center;
+  margin-left: 169px;
   margin-top: 36px;
   margin-bottom: 36px;
-  text-align: center;
 }
 
 
@@ -386,9 +412,14 @@ a {
 }
 
 .footer-copyright {
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
   line-height: 26px;
-
+  margin-top: 39px;
+  margin-right: 101px;
+  margin-bottom: 40px;
+  margin-left: auto;
 }
 
 .footer-copyright img {
@@ -417,8 +448,14 @@ a {
   background-position:center;
   background-repeat: no-repeat;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.filter-components {
+  display: flex;
+  flex-direction: column;
+}
 
 
 .filter-price {
@@ -452,7 +489,6 @@ a {
     color: #ffffff;
 }
 
-in
 
 .buttton-show {
   width: 133px;
@@ -474,13 +510,17 @@ in
 /* Сортировка */
 .search-results {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
   border-bottom: 1px solid #cacaca;
+  margin-top: 18px;
+  padding-right: 73px;
+  padding-left: 72px;
+  padding-bottom: 18px;
 }
 
 .search-results h3 {
   line-height: 26px;
+
 }
 
 .search-center small {
@@ -488,10 +528,18 @@ in
   line-height: 18px;
   color: #000000;
 }
+.search-center {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  vertical-align: middle;
+}
 
-.search-center li {
+.search-center ul {
+  display: flex;
   list-style: none;
 }
+
 
 .search-center a{
   color: rgba(0, 0, 0, 0.3);
@@ -513,6 +561,13 @@ in
   text-decoration: none;
   color: #81b3d2;
   border: none;
+}
+
+.search-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  flex-direction: row;
 }
 
 .page-up {
@@ -543,12 +598,25 @@ in
 
 .catalog-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-item {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #cacaca;
+}
+
+.description {
+  display: flex;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-between;
 }
 
 .catalog-list h3 {
