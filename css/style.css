@@ -29,6 +29,9 @@ a {
   text-decoration: none;
 }
 
+input {
+  box-sizing: border-box;
+}
 
 
 /* ======================================================================= */
@@ -140,6 +143,7 @@ a {
   padding-top: 76px;
   background-size: cover;
   background:  #c0d6e4 url(../img/index/background-photo.jpg) no-repeat;
+  background-position: center;
 }
 
 .welcome-title {
@@ -158,7 +162,8 @@ a {
   height: 59px;
   background-image: url(../img/index/polygon.png);
   background-repeat: no-repeat;
-  background-size: 100% 59px;
+  background-size: 1203px 59px;
+  background-position: -1px 1px;
 }
 
 /* ======================================================================== */
@@ -174,7 +179,11 @@ a {
   align-items: center;
   width: 100%;
   min-height: 216px;
+  text-align: center;
+}
 
+.promo-title {
+  width: 440px;
 }
 
 .promo-reasons {
@@ -191,7 +200,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
 
 .advantages h2 {
   color: #ffffff;
@@ -210,8 +218,29 @@ a {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 33.3%;
 }
 
+.first-blue {
+  padding: 46px 60px 64px 60px;
+}
+
+.second-blue {
+  padding: 49px 49px 65px 48px;
+}
+
+.first-blue h2 {
+  padding: 0 85px;
+}
+
+
+.advantage-number {
+  padding-top: 8px;
+}
+
+.advantage-description {
+  padding-top: 7px;
+}
 
 .advantages-line {
   display: flex;
@@ -225,19 +254,77 @@ a {
   text-align: center;
 }
 
+.advantages-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 256px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 21px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.advantages-line li{
+  width: 33.3%;
+}
+
 .advantages-line p {
   color: #333333;
 }
 
-.advantage-bottom .advantages-line {
-  background-color: #eeeeee;
-  height: 256px;
-  margin-top: 0px;
+.advantages-row li{
+  width: 33.3%;
 }
-/*
+
+.advantages-row p {
+  color: #333333;
+}
+
+.house-text {
+  width: 252px;
+  padding-left: 73px;
+  padding-right: 75px;
+}
+
+.food-text  {
+  width: 285px;
+  padding-left: 58px;
+  padding-right: 58px;
+}
+
+.souvenirs-text {
+  width: 273px;
+  padding-left: 64px;
+  padding-right: 63px;
+}
+
+
 .more-advantage {
-  width: 33,3%;
-} */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-advantage h3 {
+  width: 30%;
+}
+
+.area-text {
+  width: 208px;
+}
+
+.road-text {
+  width: 262px;
+}
+
+.tourist-text {
+  width: 255px;
+}
+
 /* ============================================================================== */
 
 /* Поиск гостиницы */
@@ -304,7 +391,7 @@ a {
 .search-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-ar;
+  justify-content: space-between;
   align-items: center;
   font-weight: 700;
   line-height: 26px;
@@ -321,6 +408,13 @@ a {
   position: relative;
 }
 
+.date-in {
+  margin-bottom: 29px;
+}
+
+.date-out {
+  margin-bottom: 30px;
+}
 
 .arrival {
   text-align: left;
@@ -345,28 +439,123 @@ a {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
+}
+
+.arrival-text {
+  padding-left: 13px;
+}
+
+.departure-text {
   padding-left: 12px;
 }
 
 
-
-
-
 .quantity {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  margin-bottom: 54px;
+  width: 458px;
 }
 
-.quantity input {
+.adult-label {
+  text-align: left;
+  width: 71px;
+  padding-right: 41px;
+}
+
+.children-label {
+  text-align: center;
+  width: 38px;
+  padding-right: 27px;
+  padding-left: 61px;
+}
+
+.quantity-adult,
+.quantity-children {
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+
+
+.adult-minus {
+  padding: 10px 13px 10px 13px;
+  border: 0;
+  background-color: #f2f2f2;
+  color: #818181;
+  cursor: pointer;
   width: 38px;
   height: 38px;
+  text-align: center;
 }
+
+.adult-plus {
+  padding: 10px 14px 10px 13px;
+  border: 0;
+  background-color: #f2f2f2;
+  color: #818181;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+}
+
+.adult-field {
+  padding: 14px 16px;
+  border: 0;
+  background-color: #f2f2f2;
+  color: #000000;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+.children-minus {
+  padding: 10px 13px 10px 13px;
+  border: 0;
+  background-color: #f2f2f2;
+  color: #818181;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+}
+
+.children-plus {
+  padding: 10px 14px 10px 13px;
+  border: 0;
+  background-color: #f2f2f2;
+  color: #818181;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+}
+
+.children-field {
+  padding: 13px 15px 13px 15px;
+  border: 0;
+  background-color: #f2f2f2;
+  color: #000000;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
 
 .calendar {
   fill: #cacaca;
   width: 21px;
   height: 22px;
+  top: 7px;
+  position: absolute;
+  left: 94%;
 }
 
 .calendar:hover {
@@ -389,21 +578,38 @@ a {
 .icon-minus,
 .icon-plus {
   fill: #cacaca;
+  vertical-align: middle;
 }
 
-.icon-minus:hover {
+.adult-minus:hover .icon-minus {
   fill: #000000;
 }
 
-.icon-plus:hover {
+.adult-plus:hover .icon-plus {
   fill: #000000;
 }
 
-.icon-minus:active {
+.adult-minus:active .icon-minus {
   fill: #81b3d2;
 }
 
-.icon-plus:active {
+.adult-plus:active .icon-plus {
+  fill: #81b3d2;
+}
+
+.children-minus:hover .icon-minus {
+  fill: #000000;
+}
+
+.children-plus:hover .icon-plus {
+  fill: #000000;
+}
+
+.children-minus:active .icon-minus {
+  fill: #81b3d2;
+}
+
+.children-plus:active .icon-plus {
   fill: #81b3d2;
 }
 
@@ -427,7 +633,6 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 54px;
   border: none;
 }
 
@@ -534,15 +739,58 @@ a {
 .filter-houses input {
   display: flex;
   flex-direction: column;
-  width: 23px;
-  height: 23px;
-  object-fit: contain;
-  background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
 }
 
+.components-input:checked + .componets-text::before {
+  background: url(../img/catalog/checkbox-on.svg) no-repeat;
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 23px;
+}
+
+.components-input:not(checked) + .componets-text::before {
+  background: url(../img/catalog/checkbox-off.svg.svg) no-repeat;
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 23px;
+}
+
+.components-input:not(checked) + .componets-text::before {
+  background: url(../img/catalog/checkbox-off.svg.svg) no-repeat;
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 23px;
+}
+
+.houses-input:checked + .houses-text::before {
+  background: url(../img/catalog/checkbox-on.svg) no-repeat;
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 23px;
+}
+
+.houses-input:checked + .houses-text::before {
+  background: url(../img/catalog/checkbox-on.svg.svg) no-repeat;
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 23px;
+}
+
+.houses-input:checked + .houses-text::before {
+  background: url(../img/catalog/checkbox-on.svg.svg) no-repeat;
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 23px;
+}
 
 .filter-range {
   width: 330px;
@@ -802,6 +1050,7 @@ a {
   align-items: center;
   border-bottom: 1px solid #cacaca;
   padding: 30px 50px;
+  margin: 0;
 }
 
 .catalog-item a {
@@ -811,6 +1060,8 @@ a {
 .description a {
   color: #000000;
 }
+
+
 
 .left-column {
   display: flex;
@@ -851,11 +1102,9 @@ a {
 .type-price {
   display: flex;
   justify-content: center;
+  align-items: center;
   line-height: 21px;
   color: #333333;
-}
-.price {
-  margin-left: 21px;
 }
 
 .button-blue {
