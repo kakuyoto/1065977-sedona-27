@@ -234,6 +234,7 @@ input {
 }
 
 
+
 .advantage-number {
   padding-top: 8px;
 }
@@ -324,6 +325,7 @@ input {
 .tourist-text {
   width: 255px;
 }
+
 
 /* ============================================================================== */
 
@@ -503,7 +505,8 @@ input {
 }
 
 .adult-field {
-  padding: 14px 16px;
+  padding: 10px 10px;
+  font-weight: bold;
   border: 0;
   background-color: #f2f2f2;
   color: #000000;
@@ -537,7 +540,8 @@ input {
 }
 
 .children-field {
-  padding: 13px 15px 13px 15px;
+  padding: 10px 10px;
+  font-weight: bold;
   border: 0;
   background-color: #f2f2f2;
   color: #000000;
@@ -686,7 +690,6 @@ input {
 }
 
 .social-link:active .social-svg{
-  background: #5496bd;
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -728,7 +731,7 @@ input {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 217px;
 }
 
@@ -744,53 +747,7 @@ input {
   cursor: pointer;
 }
 
-.components-input:checked + .componets-text::before {
-  background: url(../img/catalog/checkbox-on.svg) no-repeat;
-  content: '';
-  position: absolute;
-  width: 27px;
-  height: 23px;
-}
 
-.components-input:not(checked) + .componets-text::before {
-  background: url(../img/catalog/checkbox-off.svg.svg) no-repeat;
-  content: '';
-  position: absolute;
-  width: 27px;
-  height: 23px;
-}
-
-.components-input:not(checked) + .componets-text::before {
-  background: url(../img/catalog/checkbox-off.svg.svg) no-repeat;
-  content: '';
-  position: absolute;
-  width: 27px;
-  height: 23px;
-}
-
-.houses-input:checked + .houses-text::before {
-  background: url(../img/catalog/checkbox-on.svg) no-repeat;
-  content: '';
-  position: absolute;
-  width: 27px;
-  height: 23px;
-}
-
-.houses-input:checked + .houses-text::before {
-  background: url(../img/catalog/checkbox-on.svg.svg) no-repeat;
-  content: '';
-  position: absolute;
-  width: 27px;
-  height: 23px;
-}
-
-.houses-input:checked + .houses-text::before {
-  background: url(../img/catalog/checkbox-on.svg.svg) no-repeat;
-  content: '';
-  position: absolute;
-  width: 27px;
-  height: 23px;
-}
 
 .filter-range {
   width: 330px;
@@ -1043,37 +1000,46 @@ input {
   list-style: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #cacaca;
-  padding: 30px 50px;
-  margin: 0;
+  height: 151px;
 }
+
 
 .catalog-item a {
   height: fit-content;
+}
+
+.catalog-item h3 {
+  margin-top: 30px;
 }
 
 .description a {
   color: #000000;
 }
 
-
-
 .left-column {
   display: flex;
-  flex-direction: row;
-  width: 993px
+}
+
+.catalog-img {
+  padding-top: 30px;
+  padding-left: 72px;
 }
 
 
 .description {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: flex-start;
+  justify-content: center;
   margin-left: 30px;
 
 }
@@ -1082,13 +1048,13 @@ input {
 .rating {
   display: flex;
   flex-direction: column;
-  text-align: right;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
 }
+
 
 .catalog-list h3 {
   line-height: 26px;
+  margin-bottom: 50px;
 }
 
 .catalog-list a:hover {
@@ -1101,19 +1067,28 @@ input {
 
 .type-price {
   display: flex;
-  justify-content: center;
-  align-items: center;
   line-height: 21px;
   color: #333333;
+}
+
+.type {
+  display: flex;
+  align-items: flex-start;
 }
 
 .button-blue {
   padding: 7px 17px 7px 17px;
   width: 110px;
   height: 27px;
+  box-sizing: border-box;
   background-color: #81b3d2;
   font-weight: 700;
   line-height: 21px;
+}
+
+.hotel-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hotel-buttons a{
@@ -1161,6 +1136,7 @@ input {
   background-color: #f2f2f2;
   text-align: center;
   margin-top: 47px;
+  margin-right: 73px;
 }
 
 .icon-star {
@@ -1169,12 +1145,10 @@ input {
   width: 18px;
   height: 17px;
   margin-right: 6px;
-  text-align: right;
-
 }
 
-.icon-star:last-child {
-  margin: 0;
+.rating-stars {
+  margin-right: 72px;
 }
 
 
