@@ -137,13 +137,14 @@ input {
 /* backround-image */
 
 .welcome {
-  display: block;
   position: relative;
   height: 432px;
   padding-top: 76px;
   background-size: cover;
   background:  #c0d6e4 url(../img/index/background-photo.jpg) no-repeat;
-  background-position: center;
+  background-position: center -85px;
+  background-color: #81b3d2
+  ;
 }
 
 .welcome-title {
@@ -201,6 +202,11 @@ input {
   justify-content: space-between;
 }
 
+.advantage-blue img {
+  background-color: #766357;
+  ;
+}
+
 .advantages h2 {
   color: #ffffff;
   line-height: 21px;
@@ -217,26 +223,33 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   width: 33.3%;
 }
 
-.first-blue {
-  padding: 46px 60px 64px 60px;
-}
-
-.second-blue {
-  padding: 49px 49px 65px 48px;
+.first-blue .advantage-description {
+  width: 280px;
 }
 
 .first-blue h2 {
-  padding: 0 85px;
+  width: 140px;
 }
+
+.first-blue {
+  width: 400px;
+}
+
+.second-blue .advantage-description {
+  width: 303px;
+}
+
 
 
 
 .advantage-number {
   padding-top: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantage-description {
@@ -327,6 +340,7 @@ input {
 }
 
 
+
 /* ============================================================================== */
 
 /* Поиск гостиницы */
@@ -401,6 +415,8 @@ input {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   color: #000000;
   padding: 55px;
+  position: absolute;
+  background-color: #ffffff;
 }
 
 .date-in,
@@ -640,6 +656,10 @@ input {
   border: none;
 }
 
+.map-sedona {
+  background-image: url(../img/index/map.jpg);
+}
+
 /* ================================================================================ */
 
 /* Подвал */
@@ -651,7 +671,6 @@ input {
   width: 100%;
   min-height: 120px;
   opacity: 0.9;
-  margin-top: 36px;
 }
 
 .contacts {
@@ -727,25 +746,58 @@ input {
   line-height: 21px;
   background-image: url("../img/catalog/filter-background.jpg");
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
+  background-color: #766357;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 217px;
 }
 
+.header-filter ul {
+  list-style: none;
+}
 
 
 
-.filter-components input,
-.filter-houses input {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+.components-item {
+  box-sizing: border-box;
+  padding-bottom: 22px;
+}
+
+.filter-components input[type="checkbox"] {
+  display: none;
+}
+
+
+.components-label,
+.houses-label {
+  position: relative;
   cursor: pointer;
 }
+
+.components-input {
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 13px;
+  opacity: 0;
+}
+
+
+
+.filter-components input[type="checkbox"]::after + label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 23px;
+  height: 23px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 
 
 
@@ -1017,9 +1069,7 @@ input {
   height: fit-content;
 }
 
-.catalog-item h3 {
-  margin-top: 30px;
-}
+
 
 .description a {
   color: #000000;
@@ -1054,7 +1104,6 @@ input {
 
 .catalog-list h3 {
   line-height: 26px;
-  margin-bottom: 50px;
 }
 
 .catalog-list a:hover {
@@ -1076,10 +1125,12 @@ input {
   align-items: flex-start;
 }
 
+.price {
+  margin-left: 39px;
+}
+
 .button-blue {
-  padding: 7px 17px 7px 17px;
-  width: 110px;
-  height: 27px;
+  padding: 3.6px 17px;
   box-sizing: border-box;
   background-color: #81b3d2;
   font-weight: 700;
@@ -1106,16 +1157,15 @@ input {
 }
 
 .button-brown {
-  width: 142px;
-  height: 27px;
   background-color: #766357;
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 2px 17px 7px 17px;
+  padding: 3.6px 17px;
   border: none;
   margin-left: 6px;
+  box-sizing: border-box;
 }
 
 .button-brown:hover {
