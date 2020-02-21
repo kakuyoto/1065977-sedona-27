@@ -11,16 +11,14 @@
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-navigation">
+          <div class="main-header-logo">
+            <a href="index.html"><img src="img/global/logo.svg" width="140" height="71" alt="Логотип Седона"></a>
+          </div>
           <ul class="site-navigation">
             <li class="site-navigation__link"><a href="#">Информация</a></li>
             <li class="site-navigation__link"><a href="#">Фото и видео</a></li>
             <li class="site-navigation__link"><a href="#">Карта штата</a></li>
             <li class="site-navigation__link"><a href="catalog.html">Гостиницы</a></li>
-            <li class="site-navigation__link_logo">
-              <div class="main-header-logo">
-                <a href="index.html"><img src="img/global/logo.svg" width="140" height="71" alt="Логотип Седона"></a>
-              </div>
-            </li>
           </ul>
         </nav>
       </header>
@@ -45,19 +43,19 @@
                 <img src="img/index/feature-picture.jpg" alt="Настоящий городок" width="800" height="256">
             </div>
             <ul class="advantages-line">
-              <li class="feature-item house">
-                <img src="img/index/icon-1.svg" alt="Дом" width="75" height="72">
-                <h3>Жильё</h3>
+              <li class="feature-item-house">
+                <img class="house-img" src="img/index/icon-1.svg" alt="Дом" width="75" height="72">
+                <h3 class="house-title">Жильё</h3>
                 <p class="house-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="feature-item food">
-                <img src="img/index/icon-3.svg" alt="Сувенир" width="74" height="70">
-                <h3>Еда</h3>
+              <li class="feature-item-food">
+                <img class="food-img" src="img/index/icon-3.svg" alt="Сувенир" width="74" height="70">
+                <h3 class="food-title">Еда</h3>
                 <p class="food-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="feature-item souvenirs">
-                <img src="img/index/icon-2.svg" alt="Бургер" width="64" height="76">
-                <h3>Сувениры</h3>
+              <li class="feature-item-souvenirs">
+                <img class="souvenirs-img" src="img/index/icon-2.svg" alt="Бургер" width="64" height="76">
+                <h3 class="souvenirs-title">Сувениры</h3>
                 <p class="souvenirs-text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
@@ -104,6 +102,7 @@
                 <div class="date-in">
                   <label class="arrival" for="date-arrival">Дата заезда:</label>
                   <input class="arrival-text" type="text" name="date-arrival" placeholder="24 апреля 2017" id="date-arrival">
+                  <!-- в кнопку -->
                     <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                       <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
                       <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
@@ -122,13 +121,13 @@
                     <label class="adult-label" for="quantity-adults">Взрослые:</label>
                     <div class="how-adults">
                       <a href="#" class="adult-minus" title="Уменьшить количество">
-                        <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="9.917" height="1.917" viewBox="0 0 9.917 1.917">
+                        <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="12" height="3" viewBox="0 0 9.917 1.917">
                           <path d="M0 0h9.917v1.917h-9.917z"></path>
                         </svg>
                       </a>
                       <input class="adult-field" type="text" name="quantity-adults" value="2" id="quantity-adults">
                       <a href="#" class="adult-plus" title="Увеличить количество">
-                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="9.917" height="9.917" viewBox="0 0 9.917 9.917">
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 9.917 9.917">
                           <path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path>
                         </svg>
                       </a>
@@ -138,13 +137,13 @@
                     <label class="children-label" for="quantity-children">Дети:</label>
                     <div class="how-childrens">
                       <a href="#" class="children-minus" title="Уменьшить количество">
-                        <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="9.917" height="1.917" viewBox="0 0 9.917 1.917">
+                        <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="12" height="3" viewBox="0 0 9.917 1.917">
                           <path d="M0 0h9.917v1.917h-9.917z"></path>
                         </svg>
                       </a>
                       <input class="children-field" type="text" name="quantity-children" value="0" id="quantity-children">
                       <a href="#" class="children-plus" title="Увеличить количество">
-                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="9.917" height="9.917" viewBox="0 0 9.917 9.917">
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 9.917 9.917">
                           <path d="M9.917 4h-4v-4h-1.917v4h-4v1.917h4v4h1.917v-4h4z"></path>
                         </svg>
                       </a>
@@ -161,7 +160,7 @@
       <footer class="main-footer">
         <div class="contacts">
           <div class="footer-hashtag">#visitSEDONA</div>
-          <div class="footer-number">Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a></div>
+          <div class="footer-number">Тел:<a href="tel:+74956660266">+7(495) 666-02-66</a></div>
         </div>
         <div class="footer-social">
           <a class="social-link" href="#" target="_blank" title="наша страница в Twitter">

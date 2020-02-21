@@ -11,15 +11,14 @@
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-navigation">
+          <div class="main-header-logo">
+            <a href="index.html"><img src="img/global/logo.svg" width="140" height="71" alt="Логотип Седона"></a>
+          </div>
           <ul class="site-navigation">
             <li class="site-navigation__link"><a href="#">Информация</a> </li>
             <li class="site-navigation__link"><a href="#">Фото и видео</a></li>
             <li class="site-navigation__link"><a href="#">Карта штата</a></li>
             <li class="site-navigation__link site-navigation__link_active"><a class="active" href="#">Гостиницы</a></li>
-            <li class="site-navigation__link_logo">
-              <div class="main-header-logo">
-                <a href="index.html"><img src="img/global/logo.svg" width="140" height="71" alt="Логотип Седона"></a>
-              </div>
           </ul>
         </nav>
       </header>
@@ -31,20 +30,20 @@
                 <ul class="components-list">
                   <li class="components-item">
                     <label class="components-label" for="checkbox1">
-                      <input class="components-input"  type="checkbox" name="pool" id="checkbox1" checked>
-                      Бассейн
+                      <input class="filter-input"  type="checkbox" name="pool" id="checkbox1" checked>
+                      <span class="filter-text">Бассейн</span>
                     </label>
                   </li>
                   <li class="components-item">
                     <label class="components-label" for="checkbox2">
-                      <div class="test"><input class="components-input" type="checkbox" name="parking" id="checkbox2" checked="checked"></div>
-                      Парковка
+                      <input class="filter-input" type="checkbox" name="parking" id="checkbox2">
+                      <span class="filter-text">Парковка</span>
                     </label>
                   </li>
                   <li class="components-item">
                     <label class="components-label" for="checkbox3">
-                      <input class="components-input" type="checkbox" name="wi-fi" id="checkbox3">
-                      wi-fi
+                      <input class="filter-input" type="checkbox" name="wi-fi" id="checkbox3">
+                      <span class="filter-text">wi-fi</span>
                     </label>
                   </li>
                 </ul>
@@ -56,20 +55,20 @@
               <ul class="houses-list">
                 <li class="houses-item">
                   <label class="houses-label" for="checkbox4">
-                    <input class="houses-input" type="checkbox" name="hotel" id="checkbox4" checked>
-                    Гостиница
+                    <input class="filter-input" type="checkbox" name="hotel" id="checkbox4" checked>
+                    <span class="filter-text">Гостиница</span>
                   </label>
                 </li>
                 <li class="houses-item">
                   <label class="houses-label" for="checkbox5">
-                    <input class="houses-input" type="checkbox" name="motel" id="checkbox5" checked>
-                    Мотель
+                    <input class="filter-input" type="checkbox" name="motel" id="checkbox5" checked>
+                    <span class="filter-text">Мотель</span>
                   </label>
                 </li>
                 <li class="houses-item">
                   <label class="houses-label" for="checkbox6">
-                    <input class="houses-input" type="checkbox" name="apartments" id="checkbox6" checked>
-                    Апартаменты
+                    <input class="filter-input" type="checkbox" name="apartments" id="checkbox6" checked>
+                    <span class="filter-text">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -94,7 +93,7 @@
         <div class="search-results">
           <h3 class="results-title">Найдено: <span>3</span></h3>
           <div class="search-center">
-            <small>Сортировка:</small>
+            <small class="sort">Сортировка:</small>
             <ul class="search-list">
               <li class="search-item"><a class="active-search" href="#">По цене</a></li>
               <li class="search-item"><a href="#">По типу</a></li>
@@ -123,7 +122,7 @@
                   <h3><a href="catalog-item.html">Amara Resort & Spa</a></h3>
                   <div class="type-price">
                     <div class="type">Гостиница</div>
-                    <div class="price">от 4000 р.</div>
+                    <div class="price top-price">от 4000 р.</div>
                   </div>
                   <div class="hotel-buttons">
                     <a href="#" class="button-blue">Подробнее</a>
@@ -150,7 +149,7 @@
                   <h3><a href="catalog-item.html">Desert Quail Inn</a></h3>
                   <div class="type-price">
                     <div class="type">Мотель</div>
-                    <div class="price">от 3000 р.</div>
+                    <div class="price middle-price">от 3000 р.</div>
                   </div>
                   <div class="hotel-buttons">
                     <a href="#" class="button-blue">Подробнее</a>
@@ -176,7 +175,7 @@
                   <h3><a href="catalog-item.html">Villas at Poco Diablo</a></h3>
                   <div class="type-price">
                     <div class="type">Апартаменты</div>
-                    <div class="price">от 2000 р.</div>
+                    <div class="price bottom-price">от 2000 р.</div>
                   </div>
                   <div class="hotel-buttons">
                     <a href="#" class="button-blue">Подробнее</a>
