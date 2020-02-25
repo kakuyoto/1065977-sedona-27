@@ -706,7 +706,7 @@ input {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   opacity: 0.9;
   background-color: #ffffff;
 }
@@ -808,7 +808,7 @@ input {
   align-items: center;
   justify-content: space-between;
   height: 217px;
-  padding-left: 72px;
+  padding-left: 70.5px;
 }
 
 .header-filter ul {
@@ -824,29 +824,33 @@ input {
 .header-filter legend {
   font-size: 16px;
   font-weight: 800;
-  padding-top: 60px;
+  padding-top: 61px;
 }
 
 .components-list,
 .houses-list {
-  padding-top: 10px;
+  padding-top: 7px;
   padding-left: 0;
 }
 
 .components-item,
 .houses-item {
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .filter-houses {
-  padding-right: 235px;
+  padding-right: 232px;
 }
 
 .header-filter label {
   display: flex;
 }
 
-.filter-text {
+.components-text {
+  padding-left: 11px;
+}
+
+.houses-text {
   padding-left: 17px;
 }
 
@@ -921,8 +925,8 @@ input {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 60px;
+  width: 83px;
+  padding-left: 64px;
 }
 
 .price-controls input {
@@ -976,7 +980,7 @@ input {
 }
 .button-transparent {
   display: block;
-  margin: 0 auto;
+  margin: 5px 0px 5px 83px;
   padding: 7px 35px;
   font-size: 14px;
   line-height: 20px;
@@ -1002,18 +1006,20 @@ input {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #cacaca;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  margin-top: 9px;
+  padding-bottom: 7px;
   padding-right: 73px;
   padding-left: 72px;
+  padding-top: 2px;
 }
 
 .search-results h3 {
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .results-title {
   white-space: nowrap;
+
 }
 
 
@@ -1029,12 +1035,13 @@ input {
   align-items: center;
   margin-left: 40px;
   width: 100%;
+  vertical-align: middle;
 }
 
 .search-list {
   display: flex;
   list-style: none;
-  padding-left: 49px;
+  padding-left: 47px;
 }
 
 .search-item:nth-child(2) {
@@ -1133,8 +1140,8 @@ input {
   border-bottom: 1px solid #cacaca;
   padding-left: 72px;
   padding-right: 73px;
-  margin: 25px 0 0;
-  padding-bottom: 30px;
+  margin: 29px 0 0;
+  padding-bottom: 26px;
   box-sizing: border-box;
 }
 
@@ -1180,7 +1187,7 @@ input {
   margin-top: -4px;
   margin-right: 0px;
   margin-bottom: 8px;
-  margin-left: 0px;
+  margin-left: 2px;
   height: 100%;
 }
 
