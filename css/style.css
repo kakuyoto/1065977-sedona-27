@@ -78,16 +78,18 @@ input {
 
 
 .site-navigation__link:nth-of-type(1) {
-  padding-left: 72px;
+  padding-left: 71px;
 }
 
 .site-navigation__link:nth-of-type(2) {
-  margin-right: 240px;
+  margin-right: 246.5px;
   text-align: center;
+  padding-left: 6px;
 }
 
 .site-navigation__link:nth-of-type(3) {
   text-align: center;
+
 }
 
 .site-navigation__link:nth-of-type(4) {
@@ -109,7 +111,7 @@ input {
   left: 50%;
   transform: translateX(-50%);
   padding-left: 51px;
-  padding-right: 53px;
+  padding-right: 51px;
 }
 
 .main-header-logo a {
@@ -134,7 +136,7 @@ input {
 .welcome {
   position: relative;
   height: 432px;
-  padding-top: 76px;
+  padding-top: 75px;
   background-size: cover;
   background:  #c0d6e4 url(../img/index/background-photo.jpg) no-repeat;
   background-position: center -85px;
@@ -180,10 +182,13 @@ input {
 
 .promo-title {
   width: 440px;
+  line-height: 26px;
+  margin-top: 19px;
 }
 
 .promo-reasons {
   color: #333333;
+  padding-top: 5px;
 }
 /* ======================================================================================= */
 
@@ -220,6 +225,7 @@ input {
   justify-content: center;
   align-items: center;
   width: 33.3%;
+  padding-bottom: 14px;
 }
 
 .first-blue .advantage-description {
@@ -237,8 +243,6 @@ input {
 .second-blue .advantage-description {
   width: 303px;
 }
-
-
 
 
 .advantage-number {
@@ -280,8 +284,17 @@ input {
   width: 33.3%;
 }
 
+.advantages-line img {
+  padding-left: 1px;
+  padding-bottom: 3px;
+}
+
 .advantages-line p {
   color: #333333;
+}
+
+.advantages-line h3 {
+  padding-bottom: 3px;
 }
 
 .advantages-row li{
@@ -307,16 +320,19 @@ input {
 .feature-item-house {
   padding-left: 73px;
   padding-right: 75px;
+  padding-bottom: 8px;
 }
 
 .feature-item-food {
   padding-left: 58px;
   padding-right: 58px;
+  padding-bottom: 8px;
 }
 
 .feature-item-souvenirs {
   padding-left: 64px;
   padding-right: 63px;
+  padding-bottom: 8px;
 }
 
 .more-advantage {
@@ -324,6 +340,12 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 46px;
+  padding-bottom: 56px;
+}
+
+.more-title {
+  margin: 0 auto;
 }
 
 .more-advantage h3 {
@@ -332,15 +354,26 @@ input {
 
 .area-text {
   width: 208px;
+  margin: 0 auto;
+  padding-top: 7px;
 }
 
 .road-text {
   width: 262px;
+  margin: 0 auto;
+  padding-top: 7px;
 }
 
 .tourist-text {
   width: 255px;
+  margin: 0 auto;
+  padding-top: 7px;
 }
+
+.more-number {
+  padding-top: 7px;
+}
+
 
 
 
@@ -357,14 +390,15 @@ input {
 
 .search-text {
   text-align: center;
-  margin-bottom: 38px;
+  margin-bottom: 31px;
 }
 
 .search-question {
   font-size: 30px;
   line-height: 36px;
-  margin-top: 57px;
   font-weight: 800;
+  margin-top: 51px;
+  margin-bottom: 25px;
 }
 
 .search-date {
@@ -488,7 +522,7 @@ input {
   text-align: center;
   width: 38px;
   padding-right: 27px;
-  padding-left: 61px;
+  padding-left: 56px;
 }
 
 .quantity-adult,
@@ -576,9 +610,9 @@ input {
   fill: #cacaca;
   width: 21px;
   height: 22px;
-  top: 7px;
+  top: 8px;
   position: absolute;
-  left: 94%;
+  left: 93%;
 }
 
 .calendar:hover {
@@ -674,6 +708,7 @@ input {
   width: 100%;
   min-height: 120px;
   opacity: 0.9;
+  background-color: #ffffff;
 }
 
 .contacts {
@@ -681,13 +716,15 @@ input {
   font-size: 21px;
   font-weight: 700;
   color: #000000;
+  padding-left: 34px;
 }
 
 .footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding-right: 51px;
+  padding-top: 1px;
 }
 
 .social-link {
@@ -718,9 +755,11 @@ input {
 
 .footer-copyright {
   display: flex;
+  line-height: 26px;
+  padding-top: 11px;
+  padding-right: 15px;
   align-items: center;
   text-align: center;
-  line-height: 26px;
 }
 
 .copyright-logo{
@@ -736,6 +775,19 @@ input {
 
 .copyright-logo:active {
   fill: #bdbbbc;
+}
+
+.number-link {
+  color: #000000;
+}
+
+.footer-number {
+  padding-left: 1px;
+  padding-top: 6px;
+}
+
+.copyright-text {
+  padding-bottom: 5px;
 }
 
 /* ======================================================================================== */
@@ -755,7 +807,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 217px;
+  height: 217px;
   padding-left: 72px;
 }
 
@@ -801,43 +853,34 @@ input {
 
 
 .filter-input {
-  width: 23px;
+  width: 27px;
   height: 23px;
   appearance: none;
   -o-appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-color: transparent;
-  border: 2px solid #ffffff;
   border-radius: 3px;
   margin: 0;
   cursor: pointer;
+  background-image: url(../img/catalog/checkbox-off.svg);
+  background-repeat: no-repeat;
+  filter: invert(1);
 }
 
 .filter-input:checked {
-  color: #ffffff;
+  background-image: url(../img/catalog/checkbox-on.svg);
 }
 
 .filter-input::-ms-check {
   display: none;
 }
 
-.filter-input:checked::before {
-  content: "\2714";
-  width: 23px;
-  height: 23px;
-}
-
-
-
-
-
 
 
 .filter-range {
-  width: 330px;
+
   color: #ffffff;
-  margin-right: 74px;
+  margin-right: 72px;
 }
 
 .filter-range-title {
@@ -848,8 +891,9 @@ input {
 }
 
 .price-controls {
+  width: 314px;
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -870,15 +914,15 @@ input {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 32px;
+  vertical-align: middle;
   cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 60px;
 }
 
 .price-controls input {
@@ -888,6 +932,7 @@ input {
   font: inherit;
   background: none;
   border: none;
+
 }
 
 .range-controls {
@@ -932,7 +977,7 @@ input {
 .button-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 7px 35px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -1237,12 +1282,9 @@ input {
   background-image: url(../img/catalog/star.svg);
   width: 18px;
   height: 17px;
-  margin-right: 6px;
 }
 
-.icon-star:last-child {
-  margin-right: 0;
-}
+
 
 
 
