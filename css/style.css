@@ -10,14 +10,6 @@
   background-color: white;
  }
 
-.wrapper {
-  min-width: 768px;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
-
-}
 
 h1, h2, h3 {
   font-weight: 800;
@@ -35,6 +27,15 @@ input {
 
 
 /* ======================================================================= */
+
+.wrapper {
+  min-width: 768px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+
+}
 
 /* Header */
 
@@ -110,8 +111,7 @@ input {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding-left: 51px;
-  padding-right: 51px;
+  padding: 0 51px;
 }
 
 .main-header-logo a {
@@ -161,7 +161,7 @@ input {
   background-image: url(../img/index/polygon.png);
   background-repeat: no-repeat;
   background-size: 1203px 59px;
-  background-position: -1px 1px;
+  background-position: -1px 1.5px;
 }
 
 /* ======================================================================== */
@@ -176,7 +176,7 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 216px;
+  padding: 40px 0 44px;
   text-align: center;
 }
 
@@ -217,8 +217,7 @@ input {
   line-height: 21px;
 }
 
-.first-blue,
-.second-blue {
+.description-blue {
   background-color: #81b3d2;
   display: flex;
   flex-direction: column;
@@ -226,21 +225,22 @@ input {
   align-items: center;
   width: 33.3%;
   padding-bottom: 14px;
+  min-height: 242px;
 }
 
-.first-blue .advantage-description {
+.advantage-description-top {
   width: 280px;
 }
 
-.first-blue h2 {
+.advantage-title {
   width: 140px;
 }
 
-.first-blue {
+.advantage-top .description-blue{
   width: 400px;
 }
 
-.second-blue .advantage-description {
+.advantage-description-bottom {
   width: 303px;
 }
 
@@ -251,7 +251,8 @@ input {
   margin-bottom: 0;
 }
 
-.advantage-description {
+.advantage-description-top,
+.advantage-description-bottom {
   padding-top: 7px;
 }
 
@@ -259,8 +260,7 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 330px;
-  padding: 0;
+  padding: 57px  0;
   margin: 0;
   list-style: none;
   line-height: 21px;
@@ -271,7 +271,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 256px;
+  height: 256px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -306,15 +306,15 @@ input {
 }
 
 .house-text {
-  width: 252px;
+  min-width: 252px;
 }
 
 .food-text  {
-  width: 285px;
+  min-width: 285px;
 }
 
 .souvenirs-text {
-  width: 273px;
+  min-width: 273px;
 }
 
 .feature-item-house {
@@ -326,7 +326,6 @@ input {
 .feature-item-food {
   padding-left: 58px;
   padding-right: 58px;
-  padding-bottom: 8px;
 }
 
 .feature-item-souvenirs {
@@ -340,7 +339,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 46px;
+  padding-top: 45px;
   padding-bottom: 56px;
 }
 
@@ -628,7 +627,7 @@ input {
 }
 
 .search-form input:focus {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   border: 2px solid#e5e5e5;
 }
 
@@ -638,34 +637,16 @@ input {
   vertical-align: middle;
 }
 
-.adult-minus:hover .icon-minus {
-  fill: #000000;
-}
-
-.adult-plus:hover .icon-plus {
-  fill: #000000;
-}
-
-.adult-minus:active .icon-minus {
-  fill: #81b3d2;
-}
-
-.adult-plus:active .icon-plus {
-  fill: #81b3d2;
-}
-
-.children-minus:hover .icon-minus {
-  fill: #000000;
-}
-
+.adult-minus:hover .icon-minus,
+.adult-plus:hover .icon-plus,
+.children-minus:hover .icon-minus,
 .children-plus:hover .icon-plus {
   fill: #000000;
 }
 
-.children-minus:active .icon-minus {
-  fill: #81b3d2;
-}
-
+.adult-minus:active .icon-minus,
+.adult-plus:active .icon-plus,
+.children-minus:active .icon-minus,
 .children-plus:active .icon-plus {
   fill: #81b3d2;
 }
@@ -868,7 +849,7 @@ input {
   cursor: pointer;
   background-image: url(../img/catalog/checkbox-off.svg);
   background-repeat: no-repeat;
-  filter: invert(1);
+  background-color: transparent;
 }
 
 .filter-input:checked {
@@ -918,7 +899,7 @@ input {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 28px;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -1105,11 +1086,11 @@ input {
   width: 11px;
 }
 
-.arrow-up:hover {
+.page-up:hover .arrow-up{
   fill: #000000;
 }
 
-.arrow-up:active {
+.page-up:active .arrow-up{
   fill: #81b3d2;
 }
 
