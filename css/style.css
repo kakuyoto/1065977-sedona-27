@@ -200,12 +200,7 @@ input {
   text-align: center;
   display: flex;
   justify-content: space-between;
-}
-
-.blue-image {
   background-color: #766357;
-  height: auto;
-  object-fit: cover;
 }
 
 .advantages h2 {
@@ -225,8 +220,8 @@ input {
   justify-content: center;
   align-items: center;
   width: 33.3%;
-  padding-bottom: 14px;
-  min-height: 242px;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 
 .advantage-description-top {
@@ -260,13 +255,15 @@ input {
 .advantages-line {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   padding: 57px  0;
-  margin: 0;
+  margin: 0 0 6px 0;
   list-style: none;
   line-height: 21px;
   text-align: center;
 }
+
+
 
 .advantages-row {
   display: flex;
@@ -286,17 +283,22 @@ input {
   width: 33.3%;
 }
 
-.advantages-line img {
+.house-img,
+.food-img,
+.souvenirs-img {
   padding-left: 1px;
-  padding-bottom: 3px;
+  padding-bottom: 23px;
 }
 
 .advantages-line p {
   color: #333333;
 }
 
-.advantages-line h3 {
-  padding-bottom: 3px;
+.house-title,
+.food-title,
+.souvenirs-title  {
+  margin: 0 auto;
+  padding-bottom: 8px;
 }
 
 .advantages-row li{
@@ -322,7 +324,7 @@ input {
 .feature-item-house {
   padding-left: 73px;
   padding-right: 75px;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 
 .feature-item-food {
@@ -333,7 +335,6 @@ input {
 .feature-item-souvenirs {
   padding-left: 64px;
   padding-right: 63px;
-  padding-bottom: 8px;
 }
 
 .more-advantage {
@@ -341,8 +342,8 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 45px;
-  padding-bottom: 56px;
+  padding-top: 49px;
+  padding-bottom: 55px;
 }
 
 .more-title {
@@ -372,7 +373,7 @@ input {
 }
 
 .more-number {
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 
@@ -391,7 +392,7 @@ input {
 
 .search-text {
   text-align: center;
-  margin-bottom: 3px;
+  margin-bottom: 32px;
 }
 
 .search-question {
@@ -771,7 +772,7 @@ input {
 }
 
 .copyright-text {
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 }
 
 /* ======================================================================================== */
@@ -869,6 +870,7 @@ input {
 
   color: #ffffff;
   margin-right: 72px;
+  padding-bottom: 4px;
 }
 
 .filter-range-title {
@@ -964,7 +966,7 @@ input {
 }
 .button-transparent {
   display: block;
-  margin: 5px 0px 5px 83px;
+  margin: 5px 0px 0px 83px;
   padding: 7px 35px;
   font-size: 14px;
   line-height: 20px;
