@@ -1,5 +1,4 @@
  /* Main properties */
-
  body {
   font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
@@ -8,10 +7,11 @@
   font-size: 14px;
   font-weight: 400;
   background-color: white;
- }
+}
 
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 800;
   font-size: 21px;
   color: #000000;
@@ -34,8 +34,8 @@ input {
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
-
 }
+
 
 /* Header */
 
@@ -49,8 +49,6 @@ input {
   font-weight: 700;
   line-height: 26px;
 }
-
-
 
 .main-navigation {
   min-height: 26px;
@@ -69,14 +67,13 @@ input {
   line-height: 26px;
 }
 
-.main-navigation a:hover{
-  color:#89b8d5;
+.main-navigation a:hover {
+  color: #89b8d5;
 }
 
 .main-navigation a:active {
-  color:rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
-
 
 .site-navigation__link:nth-of-type(1) {
   padding-left: 71px;
@@ -90,15 +87,12 @@ input {
 
 .site-navigation__link:nth-of-type(3) {
   text-align: center;
-
 }
 
 .site-navigation__link:nth-of-type(4) {
   padding-right: 72px;
   text-align: right;
 }
-
-
 
 .site-navigation__link {
   box-sizing: border-box;
@@ -128,8 +122,8 @@ input {
 }
 
 
-
 /* ================================================================================ */
+
 
 /* backround-image */
 
@@ -138,10 +132,9 @@ input {
   height: 432px;
   padding-top: 75px;
   background-size: cover;
-  background:  #c0d6e4 url(../img/index/background-photo.jpg) no-repeat;
+  background: #c0d6e4 url(../img/index/background-photo.jpg) no-repeat;
   background-position: center -85px;
-  background-color: #81b3d2
-  ;
+  background-color: #81b3d2;
 }
 
 .welcome-title {
@@ -150,6 +143,7 @@ input {
   height: 353px;
   margin: 0 auto;
 }
+
 .welcome::after {
   content: "";
   position: absolute;
@@ -164,11 +158,11 @@ input {
   background-position: -1px 1.5px;
 }
 
+
 /* ======================================================================== */
 
 
 /* h1 */
-
 
 .promo {
   display: flex;
@@ -188,19 +182,23 @@ input {
 
 .promo-reasons {
   color: #333333;
-  padding-top: 5px;
+  padding: 5px 5px 0 5px;
+  width: 100%;
 }
+
+
 /* ======================================================================================= */
 
- /* advantages  */
 
- .advantage-blue {
+/* advantages  */
+
+.advantage-blue {
   width: 100%;
   min-height: 256px;
   text-align: center;
   display: flex;
   justify-content: space-between;
-  background-color: #766357;
+  background-color: #81b3d2;
 }
 
 .advantages h2 {
@@ -232,14 +230,13 @@ input {
   width: 140px;
 }
 
-.advantage-top .description-blue{
+.advantage-top .description-blue {
   width: 400px;
 }
 
 .advantage-description-bottom {
   width: 303px;
 }
-
 
 .advantage-number {
   padding-top: 8px;
@@ -256,14 +253,12 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  padding: 57px  0;
+  padding: 57px 0;
   margin: 0 0 6px 0;
   list-style: none;
   line-height: 21px;
   text-align: center;
 }
-
-
 
 .advantages-row {
   display: flex;
@@ -276,10 +271,9 @@ input {
   line-height: 21px;
   text-align: center;
   background-color: #eeeeee;
-
 }
 
-.advantages-line li{
+.advantages-line li {
   width: 33.3%;
 }
 
@@ -296,12 +290,12 @@ input {
 
 .house-title,
 .food-title,
-.souvenirs-title  {
+.souvenirs-title {
   margin: 0 auto;
   padding-bottom: 8px;
 }
 
-.advantages-row li{
+.advantages-row li {
   width: 33.3%;
 }
 
@@ -313,7 +307,7 @@ input {
   min-width: 252px;
 }
 
-.food-text  {
+.food-text {
   min-width: 285px;
 }
 
@@ -377,9 +371,8 @@ input {
 }
 
 
-
-
 /* ============================================================================== */
+
 
 /* Поиск гостиницы */
 
@@ -485,7 +478,13 @@ input {
   margin-right: 17px;
 }
 
+.departure-text:-ms-input-placeholder {
+  color: gray;
+}
 
+.arrival-text:-ms-input-placeholder {
+  color: gray;
+}
 
 .arrival-text,
 .departure-text {
@@ -496,7 +495,7 @@ input {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  padding-right: 35px;
+  padding-right: 50px;
 }
 
 .arrival-text {
@@ -507,6 +506,16 @@ input {
   padding-left: 12px;
 }
 
+.departure-text:hover,
+.arrival-text:hover  {
+  background-color: #ebebeb;
+}
+
+.arrival-text:focus,
+.departure-text:focus {
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+}
 
 .quantity {
   display: flex;
@@ -535,8 +544,6 @@ input {
   align-items: baseline;
   justify-content: space-around;
 }
-
-
 
 .adult-minus {
   padding: 10px 13px 10px 13px;
@@ -608,7 +615,6 @@ input {
   margin-left: -4px;
 }
 
-
 .calendar {
   fill: #cacaca;
   width: 21px;
@@ -624,15 +630,6 @@ input {
 
 .calendar:active {
   fill: #81b3d2;
-}
-
-.search-form input:hover {
-  background-color: #f2f2f2;
-}
-
-.search-form input:focus {
-  background-color: #f2f2f2;
-  border: 2px solid#e5e5e5;
 }
 
 .icon-minus,
@@ -664,8 +661,6 @@ input {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-
 .search-button {
   width: 458px;
   height: 58px;
@@ -682,11 +677,13 @@ input {
   background-image: url(../img/index/map.jpg);
 }
 
+
 /* ================================================================================ */
+
 
 /* Подвал */
 
-.main-footer{
+.main-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -733,10 +730,9 @@ input {
   background: #669ec0;
 }
 
-.social-link:active .social-svg{
+.social-link:active .social-svg {
   fill: rgba(255, 255, 255, 0.3);
 }
-
 
 .footer-copyright {
   display: flex;
@@ -747,7 +743,7 @@ input {
   text-align: center;
 }
 
-.copyright-logo{
+.copyright-logo {
   width: 115px;
   height: 41px;
   margin-left: 8px;
@@ -775,9 +771,12 @@ input {
   padding-bottom: 7px;
 }
 
+
 /* ======================================================================================== */
 
+
 /* catalog.html */
+
 
 /* header */
 
@@ -792,7 +791,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 217px;
+  height: auto;
   padding-left: 70.5px;
 }
 
@@ -800,7 +799,7 @@ input {
   list-style: none;
 }
 
-.header-filter fieldset{
+.header-filter fieldset {
   border: 0 none;
   margin-top: -35px;
   padding-left: 0;
@@ -839,8 +838,6 @@ input {
   padding-left: 17px;
 }
 
-
-
 .filter-input {
   width: 27px;
   height: 23px;
@@ -864,10 +861,7 @@ input {
   display: none;
 }
 
-
-
 .filter-range {
-
   color: #ffffff;
   margin-right: 72px;
   padding-bottom: 4px;
@@ -964,6 +958,7 @@ input {
 .range-toggle-max {
   left: 80%;
 }
+
 .button-transparent {
   display: block;
   margin: 5px 0px 0px 83px;
@@ -984,10 +979,11 @@ input {
 }
 
 
-
 /* ========================================================================================== */
 
+
 /* Сортировка */
+
 .search-results {
   display: flex;
   align-items: center;
@@ -1005,9 +1001,7 @@ input {
 
 .results-title {
   white-space: nowrap;
-
 }
-
 
 .sort {
   font-size: 12px;
@@ -1038,14 +1032,14 @@ input {
   padding-left: 33px;
 }
 
-
-.search-center a{
+.search-center a {
   color: rgba(0, 0, 0, 0.3);
   font-size: 12px;
   line-height: 18px;
   list-style: none;
   border-bottom: 1px dashed #81b3d2;
 }
+
 .search-center a:hover {
   color: #81b3d2;
 }
@@ -1091,11 +1085,11 @@ input {
   width: 11px;
 }
 
-.page-up:hover .arrow-up{
+.page-up:hover .arrow-up {
   fill: #000000;
 }
 
-.page-up:active .arrow-up{
+.page-up:active .arrow-up {
   fill: #81b3d2;
 }
 
@@ -1107,7 +1101,9 @@ input {
   color: #81b3d2
 }
 
+
 /* ================================================================ */
+
 
 /* Гостиницы */
 
@@ -1132,14 +1128,14 @@ input {
 }
 
 .catalog-item a {
-  height: fit-content;
+  height: 100%;
 }
 
 .catalog-img {
   display: flex;
   align-items: center;
+  height: fit-content;
 }
-
 
 .description a {
   color: #000000;
@@ -1149,7 +1145,10 @@ input {
   display: flex;
 }
 
-
+.right-column {
+  height: 100%;
+  padding-left: 50px;
+}
 
 .description {
   display: flex;
@@ -1157,16 +1156,13 @@ input {
   align-items: flex-start;
   justify-content: center;
   padding-left: 30px;
-
 }
-
 
 .rating {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-
 
 .catalog-list h3 {
   line-height: 26px;
@@ -1215,6 +1211,7 @@ input {
   background-color: #81b3d2;
   font-weight: 700;
   line-height: 21px;
+  max-width: 110px;
 }
 
 .hotel-buttons {
@@ -1224,7 +1221,7 @@ input {
   margin-bottom: 0px;
 }
 
-.hotel-buttons a{
+.hotel-buttons a {
   color: #ffffff;
 }
 
@@ -1248,6 +1245,7 @@ input {
   border: none;
   margin-left: 6px;
   box-sizing: border-box;
+  max-width: 142px;
 }
 
 .button-brown:hover {
@@ -1275,9 +1273,6 @@ input {
   width: 18px;
   height: 17px;
 }
-
-
-
 
 
 /* ===================================================================================================== */
