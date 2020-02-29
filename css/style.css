@@ -470,22 +470,13 @@ input {
   text-align: center;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+@keyframes form_opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .search-form {
@@ -508,7 +499,7 @@ input {
 
 .form-show {
     display: flex;
-    animation: bounce 0.6s;
+    animation: form_opacity 0.7s;
 }
 
 .date-in,
