@@ -428,12 +428,15 @@ input {
 .find-hotel {
   width: 568px;
   min-height: 86px;
+  box-sizing: border-box;
+  padding-top: 29px;
 
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 
   border: 0;
   background-color: #766357;
@@ -458,17 +461,37 @@ input {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 
   width: 568px;
   height: 395px;
 
+
   text-align: center;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .search-form {
   position: absolute;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -481,6 +504,11 @@ input {
 
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.form-show {
+    display: flex;
+    animation: bounce 0.6s;
 }
 
 .date-in,
@@ -1387,6 +1415,7 @@ input {
 
   background-image: url(../img/catalog/star.svg);
 }
+
 
 
 /* ===================================================================================================== */
