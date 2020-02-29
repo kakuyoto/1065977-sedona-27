@@ -857,7 +857,7 @@ input {
   color: #ffffff;
   line-height: 21px;
 
-  background: #80390d url("../img/catalog/filter-background.jpg");
+  background:#766357 url("../img/catalog/filter-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1239,6 +1239,7 @@ input {
   display: flex;
   align-items: center;
   height: fit-content;
+  background-color: #766357;
 }
 
 .description a {
