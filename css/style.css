@@ -129,6 +129,15 @@ input {
 .site-navigation__link .active {
   color: #766357;
   cursor: default;
+  text-decoration: none;
+}
+
+.site-navigation__link .active:active {
+  color: #766357;
+}
+
+.site-navigation__link .active:hover {
+  color: #766357;
 }
 
 
