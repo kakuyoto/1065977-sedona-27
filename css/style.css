@@ -954,6 +954,15 @@ input {
   display: none;
 }
 
+.filter-input:checked:disabled {
+  background-image: url(../img/catalog/checkbox-on-disabled.svg);
+}
+
+.filter-input:not(checked):disabled {
+  background-image: url(../img/catalog/checkbox-off-disabled.svg);
+}
+
+
 .filter-range {
   margin-right: 72px;
   padding-bottom: 4px;
