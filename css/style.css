@@ -126,8 +126,9 @@ input {
   color: #000000;
 }
 
-.site-navigation__link .active:visited {
+.site-navigation__link .active{
   color: #766357;
+  cursor: default;
 }
 
 
