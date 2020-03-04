@@ -11,10 +11,8 @@
   background-color: white;
 }
 
-h1,
-h2,
-h3 {
-  font-weight: 800;
+.headline {
+  font-weight: bold;
   font-size: 21px;
   color: #000000;
 }
@@ -23,9 +21,6 @@ a {
   text-decoration: none;
 }
 
-input {
-  box-sizing: border-box;
-}
 
 
 /* ======================================================================= */
@@ -66,6 +61,7 @@ input {
 .site-navigation {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -82,29 +78,28 @@ input {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation__link:nth-of-type(1) {
-  padding-left: 71px;
+.site-navigation__link:nth-of-type(1){
+  padding-left: 72px;
+  text-align: left;
 }
 
-.site-navigation__link:nth-of-type(2) {
-  margin-right: 246.5px;
-  padding-left: 6px;
-
-  text-align: center;
+.site-navigation__link:nth-of-type(2){
+  padding-left: 147px;
+  text-align: left;
 }
 
-.site-navigation__link:nth-of-type(3) {
-  text-align: center;
+.site-navigation__link:nth-of-type(3){
+  padding-left: 388px;
+  text-align: right;
 }
 
-.site-navigation__link:nth-of-type(4) {
-  padding-right: 72px;
+.site-navigation__link:nth-of-type(4){
+  padding-left: 164px;
   text-align: right;
 }
 
 .site-navigation__link {
   box-sizing: border-box;
-  width: 239px;
 }
 
 .main-header-logo {
@@ -120,6 +115,7 @@ input {
 .main-header-logo a {
   display: inline-block;
   height: 100%;
+  vertical-align: baseline;
 }
 
 .site-navigation a {
@@ -150,7 +146,7 @@ input {
   position: relative;
 
   height: 432px;
-  padding-top: 75px;
+  padding-top: 76px;
 
   background: #81b3d2 url(../img/index/background-photo.jpg) center -85px no-repeat ;
 }
@@ -192,7 +188,7 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 40px 0 44px;
+  padding: 42px 0 43px;
 
   text-align: center;
 }
@@ -205,7 +201,7 @@ input {
 }
 
 .promo-reasons {
-  padding: 5px 5px 0 5px;
+  padding: 6px 5px 0 5px;
   width: 100%;
 
   color: #333333;
@@ -281,8 +277,9 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  flex-wrap: wrap;
   padding: 57px 0;
-  margin: 0 0 6px 0;
+  margin: 0 0 11px 0;
 
   list-style: none;
   line-height: 21px;
@@ -293,6 +290,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
   height: auto;
   padding: 0;
   margin: 0 0 2px 0;
@@ -335,31 +333,15 @@ input {
 }
 
 .house-text {
-  min-width: 252px;
+  padding: 0 75px 0 70px;
 }
 
 .food-text {
-  min-width: 285px;
+  padding: 0 58px 0 56px;
 }
 
 .souvenirs-text {
-  min-width: 273px;
-}
-
-.feature-item-house {
-  padding-left: 73px;
-  padding-right: 75px;
-  padding-bottom: 5px;
-}
-
-.feature-item-food {
-  padding-left: 58px;
-  padding-right: 58px;
-}
-
-.feature-item-souvenirs {
-  padding-left: 64px;
-  padding-right: 63px;
+  padding: 0 63px 0 64px;
 }
 
 .more-advantage {
@@ -427,7 +409,6 @@ input {
 
   font-size: 30px;
   line-height: 36px;
-  font-weight: 800;
 }
 
 .search-date {
@@ -471,7 +452,7 @@ input {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  display: none;
+  display: flex;
 
   width: 568px;
   height: 395px;
@@ -508,11 +489,13 @@ input {
 }
 
 .form-show {
-    display: flex;
+    display: none;
     animation: vanish 0.6s;
 }
 
-
+.search-form input {
+  box-sizing: border-box;
+}
 
 .date-in,
 .date-out {
@@ -767,7 +750,8 @@ input {
 }
 
 .map-sedona {
-  background-image: url(../img/index/map.jpg);
+  background-image: url(../img/idex/map.jpg);
+  background-color: #6B8E23;
 }
 
 
@@ -1424,6 +1408,7 @@ input {
   display: inline-block;
   width: 18px;
   height: 17px;
+  vertical-align: baseline;
 
   background-image: url(../img/catalog/star.svg);
 }
