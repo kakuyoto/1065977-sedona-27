@@ -11,7 +11,7 @@
   background-color: white;
 }
 
-.headline {
+.heading {
   font-weight: bold;
   font-size: 21px;
   color: #000000;
@@ -111,12 +111,12 @@ a {
 
   padding: 0 51px;
 }
-
+/*
 .main-header-logo a {
   display: inline-block;
   height: 100%;
   vertical-align: baseline;
-}
+} */
 
 .site-navigation a {
   color: #000000;
@@ -473,7 +473,7 @@ a {
 .search-form {
   position: absolute;
 
-  display: block;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -488,9 +488,9 @@ a {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
-.form-show {
+.form-remove {
     display: none;
-    animation: vanish 0.6s;
+    animation: vanish 10s;
 }
 
 .search-form input {
@@ -750,7 +750,7 @@ a {
 }
 
 .map-sedona {
-  background-image: url(../img/idex/map.jpg);
+  background-image: url(../img/index/map.jpg);
   background-color: #6B8E23;
 }
 
@@ -772,7 +772,7 @@ a {
 }
 
 .contacts {
-  padding-left: 34px;
+  padding-left: 38px;
 
   line-height: 26px;
   font-size: 21px;
@@ -1249,7 +1249,7 @@ a {
   padding-left: 72px;
   padding-right: 73px;
   margin: 29px 0 0;
-  padding-bottom: 26px;
+  padding-bottom: 29px;
   box-sizing: border-box;
 
   border-bottom: 1px solid #cacaca;
@@ -1408,7 +1408,7 @@ a {
   display: inline-block;
   width: 18px;
   height: 17px;
-  vertical-align: baseline;
+  vertical-align: top;
 
   background-image: url(../img/catalog/star.svg);
 }
