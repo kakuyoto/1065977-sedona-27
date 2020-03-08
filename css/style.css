@@ -431,6 +431,8 @@ a {
 
   border: 0;
   background-color: #766357;
+
+  animation: vanish 1s;
 }
 
 .find-hotel:hover {
@@ -448,6 +450,16 @@ a {
   height: 473px;
 }
 
+
+@keyframes vanish {
+	0% {
+    opacity: 0;
+  }
+	100% {
+     opacity: 1;
+	}
+}
+
 .form-hotels {
   position: absolute;
   left: 50%;
@@ -461,13 +473,11 @@ a {
   text-align: center;
 }
 
-@keyframes vanish {
-	0% {
-    opacity: 0;
-  }
-	100% {
-     opacity: 1;
-	}
+
+.form-remove {
+  animation: vanish 5s;
+  visibility: hidden;
+  transition: visibility 2s;
 }
 
 .search-form {
@@ -486,11 +496,6 @@ a {
 
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-}
-
-.form-remove {
-    display: none;
-    animation: vanish 10s;
 }
 
 .search-form input {

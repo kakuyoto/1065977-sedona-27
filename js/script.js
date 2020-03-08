@@ -1,10 +1,10 @@
 var link = document.querySelector(".find-hotel");
 var popup = document.querySelector(".form-hotels");
-
+var close = document.querySelector(".form-map");
+var form = popup.querySelector(".serch-form");
 var dateArrival = popup.querySelector("[name=date-arrival]");
 var dateDeparture = popup.querySelector("[name=date-departure]");
-var adults = popup.querySelector("[name=quantity-adults]");
-var childrens = popup.querySelector("[name=quantity-children]");
+
 
 
 link.addEventListener("click", function (evt) {
@@ -13,24 +13,18 @@ link.addEventListener("click", function (evt) {
   dateArrival.focus();
 });
 
-popup.addEventListener("submit", function (evt) {
-  evt.preventDefault();
-});
-
-popup.addEventListener("submit", function (evt) {
-  if (!dateArrival.value || !dateDeparture.value || !adults.value || !childrens.value) {
-    evt.preventDefault();
+close.addEventListener("click", function (evt) {
+  if (!popup.classList.contains(".form-remove")) {
+     popup.classList.add(".form-remove");
   }
 });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (link.classList.contains("form-hotels")) {
-      link.classList.remove("form-hotels");
-    }
-  }
-});
+// popup.addEventListener("submit", function (evt) {
+//   evt.preventDefault();
+// });
+
+
+
 
 
 
