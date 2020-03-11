@@ -1,8 +1,8 @@
 var link = document.querySelector(".find-hotel");
 var popup = document.querySelector(".form-hotels");
-var form = popup.querySelector(".serch-form");
 var dateArrival = popup.querySelector("[name=date-arrival]");
-var dateDeparture = popup.querySelector("[name=date-departure]");
+var inputs = popup.querySelectorAll("input[type=text]");
+var btnSubmit = popup.querySelector(".search-button");
 
 
 
@@ -12,11 +12,21 @@ link.addEventListener("click", function (evt) {
   dateArrival.focus();
 });
 
+if (typeof(btnSubmit) != "undefined" && btnSubmit !== null) {
+  var counter = 0;
+  btnSubmit.addEventListener("click", function(evt) {
+    if (counter === inputs.length) {
+        if (popup.classList.contains("submit-error")) {
+        popup.classList.remove("submit-error");
+      }
+      } else {
+          evt.preventDefault();
+          popup.classList.add("submit-error");
+      }
+  });
+}
 
 
-popup.addEventListener("submit", function (evt) {
-  evt.preventDefault();
-});
 
 
 
